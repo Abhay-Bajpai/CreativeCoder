@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="0;url=https://abhay-bajpai.github.io/portfolio/">
+  <title>Abhay Bajpai - Portfolio</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 20px;
+      overflow: hidden;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 10;
+    }
+    
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(to right, #8b5cf6, #d8b4fe);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+      color: #d1d5db;
+    }
+    
+    .loader {
+      border: 5px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      border-top: 5px solid #8b5cf6;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+      margin: 20px auto;
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    
+    .particles {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    
+    .particle {
+      position: absolute;
+      background-color: rgba(139, 92, 246, 0.5);
+      border-radius: 50%;
+      animation: float 20s infinite linear;
+    }
+    
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) translateX(0);
+        opacity: 0;
+      }
+      10% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-100vh) translateX(100px);
+        opacity: 0;
+      }
+    }
+  </style>
+  <script>
+    // Create particles for background effect
+    document.addEventListener('DOMContentLoaded', function() {
+      const particlesContainer = document.querySelector('.particles');
+      const numParticles = 50;
+      
+      for (let i = 0; i < numParticles; i++) {
+        const size = Math.random() * 10 + 2;
+        const particle = document.createElement('div');
+        particle.classList.add('particle');
+        particle.style.width = `${size}px`;
+        particle.style.height = `${size}px`;
+        particle.style.left = `${Math.random() * 100}%`;
+        particle.style.bottom = `${Math.random() * 100}%`;
+        particle.style.opacity = Math.random() * 0.5;
+        particle.style.animationDelay = `${Math.random() * 10}s`;
+        particle.style.animationDuration = `${Math.random() * 20 + 10}s`;
+        
+        particlesContainer.appendChild(particle);
+      }
+    });
+  </script>
+</head>
+<body>
+  <div class="particles"></div>
+  
+  <div class="container">
+    <h1>Abhay Bajpai</h1>
+    <p>Aspiring Software Developer & AI/ML Explorer</p>
+    <p>Loading portfolio website...</p>
+    <div class="loader"></div>
+    <p>If you are not redirected automatically, <a href="https://abhay-bajpai.github.io/portfolio/" style="color: #8b5cf6;">click here</a>.</p>
+  </div>
+</body>
+</html>
