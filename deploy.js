@@ -9,9 +9,9 @@ import path from 'path';
 const execAsync = promisify(exec);
 
 // Configuration - Replace these values with your information
-const GITHUB_REPO = ''; // Your GitHub repository URL (e.g., 'https://github.com/username/repo.git')
-const GITHUB_USERNAME = ''; // Your GitHub username
-const GITHUB_EMAIL = ''; // Your GitHub email
+const GITHUB_REPO = 'https://github.com/Abhay-Bajpai/portfolio.git'; // Your GitHub repository URL
+const GITHUB_USERNAME = 'Abhay-Bajpai'; // Your GitHub username
+const GITHUB_EMAIL = 'abhayofc59@gmail.com'; // Your GitHub email
 const REPO_NAME = 'portfolio'; // Repository name on GitHub
 
 async function main() {
