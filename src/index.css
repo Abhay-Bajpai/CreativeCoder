@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222.2 47.4% 11.2%;
+    --foreground: 210 40% 98%;
+    
+    --card: 222.2 47.4% 15.1%;
+    --card-foreground: 210 40% 98%;
+    
+    --popover: 222.2 47.4% 11.2%;
+    --popover-foreground: 210 40% 98%;
+    
+    --primary: 259 94% 51%;
+    --primary-foreground: 210 40% 98%;
+    
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    @apply bg-background text-foreground antialiased;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .progress-bar {
+    @apply relative h-2 rounded-full bg-opacity-20 bg-primary overflow-hidden;
+  }
+  
+  .progress-fill {
+    @apply h-full bg-primary rounded-full transition-all duration-1000 ease-in-out;
+  }
+  
+  .timeline-dot {
+    @apply w-4 h-4 bg-primary rounded-full absolute -left-2;
+  }
+  
+  .timeline-line {
+    @apply absolute left-0 top-4 bottom-0 w-0.5 bg-primary;
+  }
+
+  .nav-item {
+    @apply py-2 text-gray-300 hover:text-primary transition-colors duration-300;
+  }
+  
+  .nav-item.active {
+    @apply text-primary border-b-2 border-primary;
+  }
+
+  .project-card {
+    @apply transition-all duration-300;
+  }
+  
+  .project-card:hover {
+    @apply transform -translate-y-1 shadow-lg shadow-primary/20;
+  }
+
+  .filter-btn {
+    @apply px-4 py-2 rounded-md transition-colors duration-300 bg-gray-800 hover:bg-primary text-white;
+  }
+  
+  .filter-btn.active {
+    @apply bg-primary text-white;
+  }
+
+  .tech-tag {
+    @apply bg-primary/15 text-primary/80 rounded px-2 py-0.5 text-xs mr-2 inline-block;
+  }
+
+  .skill-icon {
+    @apply transition-transform duration-300 ease-in-out;
+  }
+
+  .skill-icon:hover {
+    @apply transform -translate-y-1 text-primary;
+  }
+
+  .social-icon {
+    @apply transition-transform duration-300 ease-in-out;
+  }
+  
+  .social-icon:hover {
+    @apply transform scale-110 text-primary;
+  }
+
+  .section-title {
+    @apply text-3xl font-bold mb-2;
+  }
+
+  .section-divider {
+    @apply w-20 h-1 bg-primary mx-auto mb-4;
+  }
+
+  .section-subtitle {
+    @apply text-gray-400 mb-8;
+  }
+  
+  .gradient-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-primary to-violet-400;
+    background-size: 200% auto;
+    animation: gradient-shift 8s linear infinite;
+  }
+  
+  .glow {
+    box-shadow: 0 0 10px 0 rgba(139, 92, 246, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .glow:hover {
+    box-shadow: 0 0 20px 0 rgba(139, 92, 246, 0.2);
+  }
+  
+  /* 3D Card effect */
+  .card-3d {
+    @apply transition-all duration-300 ease-out;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+  
+  .card-3d:hover {
+    transform: rotateY(5deg) rotateX(5deg);
+    box-shadow: 
+      -5px 5px 15px rgba(0, 0, 0, 0.2),
+      5px -5px 15px rgba(139, 92, 246, 0.1);
+  }
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

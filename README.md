@@ -1,47 +1,58 @@
-# Abhay Bajpai Portfolio
+# Abhay Bajpai's Portfolio
 
-A modern, responsive personal portfolio website featuring interactive UI elements, project showcase, skills visualization, and contact functionality.
+A modern, responsive personal portfolio website that showcases professional projects, skills, and personal brand through interactive and engaging web technologies.
 
-![Portfolio Preview](./attached_assets/Screenshot%202025-04-11%20233056.png)
+## Features
 
-## 🌟 Features
+- Modern and responsive design
+- Interactive elements and animations
+- Project showcase with filtering capabilities
+- Skills and education sections
+- Contact form with validation
+- GitHub Pages deployment integration
 
-- **Interactive Home Section**: Animated particles background, typewriter effect, and dynamic spotlight following cursor
-- **Project Showcase**: Filter projects by category with animated cards and gradient effects
-- **Skills Visualization**: Interactive progress bars and skill cards with glow effects
-- **Educational Timeline**: Elegant timeline showing academic progression
-- **Custom Animations**: Fluid transitions between sections, parallax effects, and staggered animations
+## Tech Stack
 
-## 🛠️ Tech Stack
+- React.js
+- Tailwind CSS
+- Framer Motion for animations
+- React Type Animation for typewriter effects
+- TSParticles for background particle animations
+- React Parallax Tilt for interactive 3D elements
 
-- **Frontend**: React, TypeScript, Framer Motion, TailwindCSS
-- **UI Components**: Shadcn UI, React Parallax Tilt
-- **Particles**: TSParticles for interactive background
-- **Animations**: React Type Animation for typewriter effects
+## Getting Started
 
-## 🚀 Deployment
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Run the development server: `npm run dev`
+4. Open your browser and navigate to `http://localhost:5173`
 
-This portfolio is deployed on GitHub Pages. You can view it here:
-[https://Abhay-Bajpai.github.io/portfolio/](https://Abhay-Bajpai.github.io/portfolio/)
+## Deployment
 
-## 📦 Project Structure
+This project is configured for easy deployment to GitHub Pages using the `gh-pages` package:
 
-- `client/src/components/` - Main section components (Home, About, Projects, etc.)
-- `client/src/components/ui/` - Reusable UI components
-- `client/src/lib/` - Utilities and data
+```bash
+npm run build
+npm run deploy
+```
 
-## 📝 Contact
+## Structure
 
-- **Email**: abhayofc59@gmail.com
-- **LinkedIn**: [linkedin.com/in/abhay-bajpai-](https://linkedin.com/in/abhay-bajpai-)
-- **GitHub**: [github.com/Abhay-Bajpai](https://github.com/Abhay-Bajpai)
+The project follows a clean, organized structure:
 
-## 📸 Screenshots
+```
+abhays-portfolio/
+├── public/                 # Static files (e.g., favicon, robots.txt, assets)
+├── src/                    # All source code
+│   ├── assets/             # Images, icons, illustrations
+│   ├── components/         # Reusable UI components
+│   ├── sections/           # Individual page sections
+│   ├── styles/             # Global Tailwind styles
+│   ├── App.jsx             # Root component
+│   └── main.jsx            # Entry point
+└── ...                     # Configuration files
+```
 
-<div>
-  <img src="./attached_assets/Screenshot%202025-04-11%20233035.png" alt="Home Section" width="400" />
-  <img src="./attached_assets/Screenshot%202025-04-11%20233056.png" alt="Projects Section" width="400" />
-  <img src="./attached_assets/Screenshot%202025-04-11%20233119.png" alt="Skills Section" width="400" />
-  <img src="./attached_assets/Screenshot%202025-04-11%20233135.png" alt="Education Section" width="400" />
-  <img src="./attached_assets/Screenshot%202025-04-11%20233149.png" alt="Contact Section" width="400" />
-</div>
+## License
+
+MIT
