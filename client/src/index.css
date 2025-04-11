@@ -118,4 +118,90 @@
   .section-subtitle {
     @apply text-gray-400 mb-8;
   }
+  
+  .gradient-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-primary to-violet-400;
+    background-size: 200% auto;
+    animation: gradient-shift 8s linear infinite;
+  }
+  
+  @keyframes gradient-shift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes shimmer {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  .animate-shimmer {
+    animation: shimmer 2s infinite;
+  }
+  
+  .glow {
+    box-shadow: 0 0 10px 0 rgba(139, 92, 246, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .glow:hover {
+    box-shadow: 0 0 20px 0 rgba(139, 92, 246, 0.2);
+  }
+  
+  /* Animation keyframes */
+  @keyframes shimmer {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  .animate-shimmer {
+    animation: shimmer 2s infinite;
+  }
+  
+  /* Glowing elements */
+  .glow {
+    @apply relative;
+  }
+  
+  .glow::after {
+    @apply content-[''] absolute -inset-1 bg-primary/20 rounded-xl blur-md opacity-0 transition-opacity duration-300;
+  }
+  
+  .glow:hover::after {
+    @apply opacity-100;
+  }
+  
+  /* Gradient text */
+  .gradient-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-primary to-violet-400;
+  }
+  
+  /* 3D Card effect */
+  .card-3d {
+    @apply transition-all duration-300 ease-out;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+  
+  .card-3d:hover {
+    transform: rotateY(5deg) rotateX(5deg);
+    box-shadow: 
+      -5px 5px 15px rgba(0, 0, 0, 0.2),
+      5px -5px 15px rgba(139, 92, 246, 0.1);
+  }
 }
