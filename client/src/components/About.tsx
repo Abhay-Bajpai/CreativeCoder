@@ -1,14 +1,27 @@
 import { motion } from "framer-motion";
 import { Download, MessageSquare } from "lucide-react";
+import GhibliStyleAvatar from "./ui/GhibliStyleAvatar";
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-gray-900">
-      <div className="container mx-auto px-6">
-        <div className="mb-16 text-center">
-          <h2 className="section-title">About Me</h2>
+    <section id="about" className="py-20 bg-gradient-to-b from-gray-900 to-background relative overflow-hidden">
+      {/* Decorative elements */}
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute top-20 left-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+      </div>
+      
+      <div className="container mx-auto px-6 relative z-10">
+        <motion.div 
+          className="mb-16 text-center"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+        >
+          <h2 className="section-title gradient-text inline-block">About Me</h2>
           <div className="section-divider"></div>
-        </div>
+        </motion.div>
 
         <div className="flex flex-col md:flex-row items-center gap-12">
           <motion.div
@@ -18,22 +31,16 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <div className="w-64 h-64 mx-auto bg-gradient-to-br from-primary/80 to-primary/40 rounded-full flex items-center justify-center overflow-hidden shadow-xl">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-32 w-32 text-white"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="1"
-                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                />
-              </svg>
-            </div>
+            <motion.div 
+              className="w-72 h-72 mx-auto rounded-xl overflow-hidden shadow-2xl relative bg-gradient-to-br from-primary/20 to-violet-500/20 p-3"
+              whileHover={{ scale: 1.03, boxShadow: "0 0 30px rgba(139, 92, 246, 0.3)" }}
+              transition={{ duration: 0.3 }}
+            >
+              <GhibliStyleAvatar />
+              
+              {/* Glow effect */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-primary/0 via-primary/10 to-primary/0 opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+            </motion.div>
           </motion.div>
 
           <motion.div
