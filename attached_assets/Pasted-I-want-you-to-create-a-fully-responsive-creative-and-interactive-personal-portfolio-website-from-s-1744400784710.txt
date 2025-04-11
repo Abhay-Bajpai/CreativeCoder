@@ -1,0 +1,179 @@
+I want you to create a fully responsive, creative, and interactive personal portfolio website from scratch that showcases my work, skills, and contact information. The design should be modern, sleek, professional, and make use of smooth animations and micro-interactions to create a delightful user experience. The entire site should be production-ready and deployable on platforms like Vercel or Netlify.
+
+🔧 Tech Stack (Frontend)
+Use the following technologies to build the frontend:
+
+Vite for fast bundling and development
+
+React as the JavaScript framework
+
+Tailwind CSS for utility-first styling
+
+Framer Motion for smooth entrance and scroll animations
+
+Lucide Icons or HeroIcons for minimal SVG icons
+
+React Hook Form + Zod for contact form validation
+
+Three.js or CSS 3D for animated 3D Skills cube (optional but encouraged)
+
+Dark/Light Mode Toggle with transitions (using Tailwind's darkMode: 'class')
+
+🏗 Suggested Folder Structure
+bash
+Copy
+Edit
+/my-portfolio
+├── /public
+│   └── favicon.ico
+├── /src
+│   ├── /assets          # Images, icons, and other static files
+│   ├── /components      # Reusable UI components (buttons, nav, forms, etc.)
+│   ├── /sections        # Page sections (Hero, About, Skills, etc.)
+│   ├── /styles          # Tailwind config or custom styles
+│   ├── /lib             # Utility functions or form schema
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css
+├── .gitignore
+├── index.html
+├── package.json
+├── tailwind.config.js
+├── postcss.config.js
+└── README.md
+🧩 Sections and Functionalities (Detailed)
+1. Hero Section
+Fullscreen intro with name, title (with typing animation), and subtitle.
+
+Animated background using gradients, particles, or SVG waves.
+
+Call-to-Action buttons like “Hire Me”, “View Resume”, “Contact Me”.
+
+Smooth fade-in or slide-up animation on load.
+
+2. About Me
+Profile image/avatar.
+
+Short professional bio.
+
+Download Resume button (link to PDF).
+
+Fade/slide animation on scroll.
+
+3. Skills Section
+Responsive grid of tech stack (HTML, CSS, JavaScript, React, etc.).
+
+Hover animations on skill icons/cards.
+
+Optionally, use:
+
+A 3D spinning cube using CSS/Three.js
+
+Progress bars or skill meters
+
+4. Projects Section
+Showcase at least 3–6 projects.
+
+Each project card includes:
+
+Project image or video
+
+Title & brief description
+
+Stack used (badges/icons)
+
+Links to GitHub repo & live demo
+
+Hover effects: scale, glow, or overlay info
+
+5. Contact Section
+Animated contact form with:
+
+Name, Email, Message inputs
+
+Form validation (using react-hook-form + zod)
+
+Submission feedback (toast or animation)
+
+Option to connect with EmailJS, FormSubmit, or Express backend
+
+6. Footer
+Social icons: GitHub, LinkedIn, Email (clickable)
+
+Made with 💖 message + copyright
+
+✨ Advanced Features (Optional but Recommended)
+Dark/Light Mode Toggle
+
+Smooth transition of background, text, cards
+
+Tailwind setup: darkMode: 'class'
+
+Use localStorage to remember mode
+
+Scroll-Activated Navigation
+
+Navbar links highlight as user scrolls
+
+Smooth scrolling behavior to sections
+
+Sticky/fixed navbar on scroll
+
+Micro-interactions
+
+Buttons that slightly scale or glow on hover
+
+Cards tilt or shadow pop-in
+
+Submit button animation (pulse, checkmark, etc.)
+
+Responsive Design
+
+Mobile-first layout using Tailwind breakpoints
+
+Test on tablets, phones, and desktops
+
+Hamburger nav menu for mobile
+
+📜 README.md Should Include
+Project description
+
+Features list
+
+Tech stack badges
+
+Screenshots (optional)
+
+Setup instructions (dev/build/deploy)
+
+License info
+
+🚀 Deployment
+Prepare for Vercel/Netlify:
+
+Set correct build script (vite build)
+
+Ensure output directory is /dist
+
+Add:
+
+vercel.json for SPA routing (if using React Router)
+
+_redirects file for Netlify
+
+Include a .env.example file if any variables are used
+
+✅ Final Deliverables
+Fully working modern portfolio website
+
+All code in clean modular format (components, sections)
+
+Hosted live with a link (e.g., https://abhaybajpai.dev)
+
+GitHub repo with:
+
+Proper commits
+
+README
+
+Environment setup

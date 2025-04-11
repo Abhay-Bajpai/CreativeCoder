@@ -1,0 +1,129 @@
+🧍‍♂️ Personal Info
+Full Name: Abhay Bajpai
+
+Tagline: Aspiring Software Developer | AI/ML Explorer | Frontend Craftsman
+
+Email: abhayofc59@gmail.com
+
+Phone: +91 6386648923
+
+LinkedIn: linkedin.com/in/abhay-bajpai-
+
+GitHub:https://github.com/Abhay-Bajpai
+
+Resume: https://tiiny.host/manage
+
+Location: India
+
+🏫 Education
+Bachelor of Technology in Computer Science and Engineering (AI & ML)
+Babu Banarasi Das Institute of Technology & Management
+Year of Graduation: 2025
+
+St. Mary’s Day Inter College
+
+Class 12: 79.6%
+
+Class 10: 83.4%
+
+🧠 About Me (Elaborate Section)
+txt
+Copy
+Edit
+I'm Abhay Bajpai, a passionate and curious Computer Science and Engineering student specializing in Artificial Intelligence and Machine Learning, currently pursuing my B.Tech at Babu Banarasi Das Institute of Technology & Management.
+
+From building responsive websites to experimenting with natural language processing and intelligent systems, I thrive at the intersection of creativity and logic. Whether it's bringing digital experiences to life through clean code or solving real-world problems using AI, I approach every challenge with a growth mindset.
+
+I've participated in multiple hackathons and hands-on projects that pushed my boundaries and allowed me to explore diverse technologies like React, Tailwind CSS, Flask, SpaCy, and Three.js. I love crafting interfaces that are not only functional but immersive and elegant.
+
+> *“In the midst of chaos, there is also opportunity.”* — **Sun Tzu**
+
+This mindset drives me to continuously learn, iterate, and adapt. My goal is to create impactful software that blends performance, design, and human-centered thinking.
+
+### 📜 Certifications & Learning
+- ✅ **Introduction to DSA and Machine Learning**  
+- ✅ **Introduction to Cyber Security** by Duke University  
+- ✅ Constantly exploring new trends in Web Development, AI, and System Design
+
+When I'm not coding, you’ll find me either deep in a chess game or enjoying a game of basketball — both fueling strategic thinking and focus in their own unique ways.
+
+Let’s connect, collaborate, and build something awesome!
+💼 Projects
+🐾 Jackie’s Pet Store
+Description: E-commerce website for pet lovers with sliders, dropdowns, and product catalog
+
+Tech Stack: HTML, CSS, JavaScript
+
+Highlights: Responsive design, intuitive UI
+
+📄 Text Summarization Using NLP
+Description: Built a text summarizer using NLP with SpaCy
+
+Tech Stack: Python (backend), Flask, HTML5, CSS
+
+Highlights: Stop word removal, tokenization, POS tagging, syntactic parsing
+
+🎟️ Ticketing System for Heritage Sites (ATRO-based)
+Description: A smart ticketing solution for Indian archaeological sites using ATRO algorithm
+
+Tech Stack: Open-source stack (exact techs can vary)
+
+Highlights: Adaptive orchestration, improved user flow
+
+🧠 AI Chatbot for Healthcare (College Project)
+Description: AI-based chatbot to answer health-related queries
+
+Tech Stack: Python, NLP, Flask (or similar)
+
+🏀 Sports Activity Dashboard
+Description: Interactive dashboard to track and visualize sports activities
+
+Tech Stack: HTML, CSS, JavaScript
+
+🧰 Skills
+🧑‍💻 Programming Languages
+Java
+
+Python
+
+SQL
+
+HTML, CSS, JavaScript
+
+🌐 Web Development
+Frontend: HTML5, CSS3, JavaScript, React, Tailwind CSS
+
+Backend: Flask, Node.js (learning)
+
+Tools: Git & GitHub, VS Code, Postman, Vercel, Netlify
+
+🤖 AI / ML & Data
+Machine Learning, Artificial Intelligence
+
+NLP (SpaCy, tokenization, POS tagging)
+
+Database Management System
+
+Operating Systems
+
+Computer Networks
+
+🏆 Certifications & Achievements
+✅ Introduction to DSA and Machine Learning
+
+✅ Introduction to Cyber Security by Duke University
+
+Participated in multiple hackathons and coding events
+
+🧗‍♂️ Hobbies
+♟️ Playing Chess (strategic thinking)
+
+🏀 Playing Basketball (teamwork & agility)
+
+Would you like me to:
+
+Convert this into a downloadable README.md file?
+
+Start adding this content into your portfolio layout?
+
+Create components like Hero, About, Skills, and Projects step-by-step in React + Tailwind?
