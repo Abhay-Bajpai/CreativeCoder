@@ -100,12 +100,12 @@ const About = () => {
             </div>
             <div>
               <p className="text-gray-400">
-                <span className="font-semibold text-white">Email:</span> contact@abhaybajpai.com
+                <span className="font-semibold text-white">Email:</span> abhayofc59@gmail.com
               </p>
             </div>
             <div>
               <p className="text-gray-400">
-                <span className="font-semibold text-white">Location:</span> San Francisco, CA
+                <span className="font-semibold text-white">Location:</span> Lucknow, India
               </p>
             </div>
             <div>
