@@ -94,38 +94,54 @@ export const concepts = [
 
 export const education = [
   {
-    degree: "Master of Science in Computer Science",
-    institution: "Stanford University",
-    year: "2020-2022",
-    grade: "3.8 GPA"
+    degree: "Bachelor of Technology in Computer Science and Engineering (AI & ML)",
+    institution: "Babu Banarasi Das Institute of Technology & Management",
+    year: "Expected Graduation: 2025",
+    grade: "CGPA: 6.4/10"
   },
   {
-    degree: "Bachelor of Technology in Computer Science",
-    institution: "Indian Institute of Technology",
-    year: "2016-2020",
-    grade: "First Class Honours"
+    degree: "Class 12",
+    institution: "St. Mary’s Day Inter College",
+    year: "",
+    grade: "Percentage: 79.6%"
+  },
+  {
+    degree: "Class 10",
+    institution: "St. Mary’s Day Inter College",
+    year: "",
+    grade: "Percentage: 83.4%"
   }
 ];
 
 export const certifications = [
   {
-    title: "TensorFlow Developer Certificate",
-    description: "Google's official certification for TensorFlow developers",
+    title: "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
+    description: "BBDITM, Apr 2025",
     type: "certification"
   },
   {
-    title: "AWS Certified Solutions Architect",
-    description: "Professional certification for AWS cloud architecture",
+    title: "Machine Learning & DSA",
+    description: "Score: 80%, Jul–Aug 2024",
     type: "certification"
   },
   {
-    title: "Hackathon Winner",
-    description: "First place in Regional AI Innovation Challenge",
-    type: "achievement"
+    title: "Introduction to Front-End Development",
+    description: "Meta (Coursera), Apr 2024",
+    type: "certification"
   },
   {
-    title: "React Advanced Certification",
-    description: "Specialized certification in React ecosystem and advanced patterns",
+    title: "Programming with JavaScript",
+    description: "Meta (Coursera), Apr 2024",
+    type: "certification"
+  },
+  {
+    title: "Introduction to Cyber Security",
+    description: "Duke University (Coursera), May 2023",
+    type: "certification"
+  },
+  {
+    title: "Introduction to Data Structures and Machine Learning",
+    description: "Coding Ninjas, Apr 2023",
     type: "certification"
   }
 ];
