@@ -109,39 +109,55 @@ export const concepts = [
 // Education data
 export const education = [
   {
-    degree: "Master of Science in Computer Science",
-    institution: "Stanford University",
-    year: "2019 - 2021",
-    grade: "3.9/4.0 GPA"
+    degree: "Bachelor of Technology in Computer Science and Engineering (AI & ML)",
+    institution: "Babu Banarasi Das Institute of Technology & Management",
+    year: "Expected Graduation: 2025",
+    grade: "CGPA: 6.4/10"
   },
   {
-    degree: "Bachelor of Technology in Computer Science",
-    institution: "Indian Institute of Technology (IIT) Delhi",
-    year: "2015 - 2019",
-    grade: "9.2/10 CGPA"
+    degree: "Class 12",
+    institution: "St. Mary’s Day Inter College",
+    year: "Completed",
+    grade: "Percentage: 79.6%"
+  },
+  {
+    degree: "Class 10",
+    institution: "St. Mary’s Day Inter College",
+    year: "Completed",
+    grade: "Percentage: 83.4%"
   }
 ];
 
 // Certifications and achievements
 export const certifications = [
   {
-    title: "Deep Learning Specialization",
-    description: "Completed 5-course specialization by Andrew Ng on deep learning fundamentals and applications",
+    title: "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
+    description: "BBDITM, Apr 2025",
     type: "certification"
   },
   {
-    title: "AWS Certified Solutions Architect",
-    description: "Professional certification for designing distributed systems on AWS",
+    title: "Machine Learning & DSA",
+    description: "Score: 80%, Jul–Aug 2024",
     type: "certification"
   },
   {
-    title: "1st Place - National AI Hackathon",
-    description: "Won first place in a national hackathon for developing an AI-based solution for healthcare",
-    type: "achievement"
+    title: "Introduction to Front-End Development",
+    description: "Meta (Coursera), Apr 2024",
+    type: "certification"
   },
   {
-    title: "TensorFlow Developer Certificate",
-    description: "Google's certification for proficiency in using TensorFlow for building machine learning applications",
+    title: "Programming with JavaScript",
+    description: "Meta (Coursera), Apr 2024",
+    type: "certification"
+  },
+  {
+    title: "Introduction to Cyber Security",
+    description: "Duke University (Coursera), May 2023",
+    type: "certification"
+  },
+  {
+    title: "Introduction to Data Structures and Machine Learning",
+    description: "Coding Ninjas, Apr 2023",
     type: "certification"
   }
 ];
