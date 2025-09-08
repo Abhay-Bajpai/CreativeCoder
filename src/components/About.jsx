@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import GhibliStyleAvatar from './ui/GhibliStyleAvatar';
-import { Code, Laptop, BookOpen, Lightbulb, Heart } from 'lucide-react';
+import { Code, Laptop, BookOpen, Lightbulb, Heart, Download } from 'lucide-react';
 
 const About = () => {
   const aboutItems = [
@@ -115,12 +115,28 @@ const About = () => {
             </div>
           </div>
           
-          <a
-            href="#contact"
-            className="px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-md inline-block transition-colors duration-300"
-          >
-            Contact Me
-          </a>
+          <div className="flex flex-wrap gap-4">
+            <motion.a
+              href="#contact"
+              className="px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-md inline-flex items-center transition-colors duration-300"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Contact Me
+            </motion.a>
+            
+            <motion.a
+              href="https://drive.google.com/file/d/1YaCgtmZV6AuwZVSqylCN_309brGZJBP0/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 bg-gray-800 hover:bg-gray-700 text-white rounded-md inline-flex items-center transition-colors duration-300 border border-gray-600 hover:border-primary/50"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <Download className="mr-2 h-4 w-4" />
+              Download Resume
+            </motion.a>
+          </div>
         </motion.div>
       </div>
 

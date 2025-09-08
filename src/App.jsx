@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Route, Switch } from 'wouter';
+import { ThemeProvider } from './context/ThemeContext';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
+import AnimatedBackground from './components/ui/AnimatedBackground';
 import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
@@ -41,47 +43,50 @@ const App = () => {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen bg-background">
-      <Header activeSection={activeSection} />
-      
-      <main className="flex-grow">
-        <Switch>
-          <Route path="/" exact>
-            <div className="flex flex-col space-y-24 pb-32">
-              <section id="home" className="min-h-screen flex items-center">
-                <Home />
-              </section>
-              
-              <section id="about" className="min-h-screen flex items-center">
-                <About />
-              </section>
-              
-              <section id="projects" className="min-h-screen">
-                <Projects />
-              </section>
-              
-              <section id="skills" className="min-h-screen">
-                <Skills />
-              </section>
-              
-              <section id="education" className="min-h-screen">
-                <Education />
-              </section>
-              
-              <section id="contact" className="min-h-screen">
-                <Contact />
-              </section>
-            </div>
-          </Route>
-          
-          <Route>
-            <NotFound />
-          </Route>
-        </Switch>
-      </main>
-      
-      <Footer />
-    </div>
+    <ThemeProvider>
+      <div className="flex flex-col min-h-screen bg-background relative">
+        <AnimatedBackground />
+        <Header activeSection={activeSection} />
+        
+        <main className="flex-grow relative z-10">
+          <Switch>
+            <Route path="/" exact>
+              <div className="flex flex-col space-y-24 pb-32">
+                <section id="home" className="min-h-screen flex items-center">
+                  <Home />
+                </section>
+                
+                <section id="about" className="min-h-screen flex items-center">
+                  <About />
+                </section>
+                
+                <section id="projects" className="min-h-screen">
+                  <Projects />
+                </section>
+                
+                <section id="skills" className="min-h-screen">
+                  <Skills />
+                </section>
+                
+                <section id="education" className="min-h-screen">
+                  <Education />
+                </section>
+                
+                <section id="contact" className="min-h-screen">
+                  <Contact />
+                </section>
+              </div>
+            </Route>
+            
+            <Route>
+              <NotFound />
+            </Route>
+          </Switch>
+        </main>
+        
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 };
 

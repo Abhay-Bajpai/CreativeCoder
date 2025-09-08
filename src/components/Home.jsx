@@ -62,21 +62,22 @@ const Home = () => {
             </motion.a>
             
             <motion.a
-              href="/resume.pdf"
-              download
+              href="https://drive.google.com/file/d/1YaCgtmZV6AuwZVSqylCN_309brGZJBP0/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-3 bg-gray-800 hover:bg-gray-700 text-white rounded-md flex items-center relative overflow-hidden group"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-primary/0 via-white/10 to-primary/0 -translate-x-full group-hover:animate-shimmer" />
-              Download CV
+              View Resume
               <Download className="ml-2 h-5 w-5" />
             </motion.a>
           </div>
           
           <div className="flex space-x-4">
             <motion.a
-              href="https://github.com/abhaybajpai"
+              href="https://github.com/Abhay-Bajpai"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-primary transition-colors duration-300 social-icon"
@@ -85,7 +86,7 @@ const Home = () => {
               <Github size={24} />
             </motion.a>
             <motion.a
-              href="https://linkedin.com/in/abhaybajpai"
+              href="https://linkedin.com/in/abhay-bajpai"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-primary transition-colors duration-300 social-icon"
@@ -94,7 +95,7 @@ const Home = () => {
               <Linkedin size={24} />
             </motion.a>
             <motion.a
-              href="mailto:contact@abhaybajpai.com"
+              href="mailto:abhayofc59@gmail.com"
               className="text-gray-400 hover:text-primary transition-colors duration-300 social-icon"
               whileHover={{ scale: 1.2, color: 'hsl(var(--primary))' }}
             >
